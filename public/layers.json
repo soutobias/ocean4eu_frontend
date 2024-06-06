@@ -1,0 +1,88 @@
+{
+  "Bathymetry": {
+    "icon": "",
+    "layerNames": {
+      "EMODNET-2022": {
+        "url": "https://ceeds-tool-store-o.s3-ext.jc.rl.ac.uk/ceeds/layers/bathymetry/emodnet/emodnet_2022_uk.tif",
+        "dataType": "COG",
+        "content": "The 'EMODnet Digital Bathymetry (DTM)- 2022' is a multilayer bathymetric product for Europe’s sea basins covering: • the Greater North Sea, including the Kattegat and stretches of water such as Fair Isle, Cromarty, Forth, Forties,Dover, Wight, and Portland • the English Channel and Celtic Seas • Western Mediterranean, the Ionian Sea and the Central Mediterranean Sea • Iberian Coast and Bay of Biscay (Atlantic Ocean) • Adriatic Sea (Mediterranean) • Aegean - Levantine Sea (Mediterranean). • Madeira and Azores (Macaronesia) • Baltic Sea • Black Sea • Norwegian and Icelandic Seas • Canary Islands (Macaronesia) • Arctic region and Barentz Sea The DTM is based upon 21937 bathymetric survey data sets and Composite DTMs that have been gathered from 64 data providers from 28 countries riparian to European seas and beyond. Also Satellite Derived Bathymetry data products have been included fro Landsat 8 and Sentinel satellite images. Areas not covered by observations are completed by integrating GEBCO 2022 and IBCAO V4.\n Source: https://emodnet.ec.europa.eu/geonetwork/emodnet/eng/catalog.search#/metadata/ff3aff8a-cff1-44a3-a2c8-1910bf109f85",
+        "protected": false,
+        "dataDescription": [
+          "Depth",
+          "(m)"
+        ],
+        "threeD": false,
+        "download": {
+          "GeoTIFF": "https://ceeds-tool-store-o.s3-ext.jc.rl.ac.uk/ceeds/layers/bathymetry/emodnet/emodnet_2022_uk.tif",
+          "metadata": "https://radiantearth.github.io/stac-browser/#/external/ceeds-tool-store-o.s3-ext.jc.rl.ac.uk/ceeds/stac/Bathymetry/EMODNET/collection.json"
+        },
+        "bbox": [
+          -9.000000000012616,
+          47.999887816640324,
+          3.100668943151864,
+          60.30104166662717
+        ]
+      },
+      "GEBCO-2023": {
+        "url": "https://ceeds-tool-store-o.s3-ext.jc.rl.ac.uk/ceeds/layers/bathymetry/gebco/gebco_2023.tif",
+        "dataType": "COG",
+        "content": "GEBCO’s current gridded bathymetric data set, the GEBCO_2023 Grid, is a global terrain model for ocean and land, providing elevation data, in meters, on a 15 arc-second interval grid. It is accompanied by a Type Identifier (TID) Grid that gives information on the types of source data that the GEBCO_2023 Grid is based on.\n Source: https://www.gebco.net/data_and_products/gridded_bathymetry_data/",
+        "protected": false,
+        "dataDescription": [
+          "Depth",
+          "(m)"
+        ],
+        "assetId": "2182075",
+        "threeD": false,
+        "download": {
+          "GeoTIFF": "https://ceeds-tool-store-o.s3-ext.jc.rl.ac.uk/ceeds/layers/bathymetry/gebco/gebco_2023.tif",
+          "metadata": "https://radiantearth.github.io/stac-browser/#/external/ceeds-tool-store-o.s3-ext.jc.rl.ac.uk/ceeds/stac/Bathymetry/GEBCO/collection.json"
+        },
+        "bbox": [
+          -180,
+          -90,
+          179.96586288941216,
+          90
+        ]
+      }
+    }
+  },
+  "Remote Sensing": {
+    "layerNames": {
+      "sst": {
+        "url": "NOAA/CDR/OISST/V2_1",
+        "selectName": "sst",
+        "dataType": "GEE",
+        "content": "Information about the layer",
+        "vis": {
+          "min": -2,
+          "max": 30,
+          "palette": ["blue", "cyan", "yellow", "red"]
+        },
+        "geometry": [-180, -90, 180, 90],
+        "dateSelect": true,
+        "dates":{
+          "start": "2022-01-01",
+          "end": "2023-01-01"
+        }
+      },
+      "chlorophyll": {
+        "url": "NASA/OCEANDATA/MODIS-Aqua/L3SMI",
+        "selectName": "chlor_a",
+        "dataType": "GEE",
+        "content": "Information about the layer",
+        "vis": {
+          "min": 0,
+          "max": 10,
+          "palette": ["blue", "green", "yellow", "red"]
+        },
+        "geometry": [-180, -90, 180, 90],
+        "dateSelect": true,
+        "dates":{
+          "start": "2020-01-01",
+          "end": "2024-05-31"
+        }
+      }
+    }
+  }
+}
