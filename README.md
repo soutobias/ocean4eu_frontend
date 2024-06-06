@@ -8,6 +8,7 @@ This repository contains the frontend code for the CEEDS tool.
 
 The CEEDS tool employs an innovative approach to managing extensive geospatial data with a streamlined and scalable system architecture. This approach is built on four key components: cloud-optimized data, object stores, dynamic tile servers, and static web interfaces. We pre-generate results (layers) and store them in cloud-native data formats such as Cloud Optimized GeoTIFF, Zarr, Flatgeobuf, and MBTiles. These formats allow users to access only the necessary portions of data, enabling efficient parallel processing and access without requiring complete downloads.
 
+
 Data is stored using the JASMIN Object Store, a S3-compatible object storage system from the UK's data analysis facility for environmental science. This storage solution supports the management of large datasets with parallelized file systems capable of multiple concurrent reads and HTTP range requests for partial data fetching. This is crucial for effective integration with cloud-optimized files.
 
 Tiles for the web map application are generated on-the-fly using lightweight tile server applications on serverless architectures, significantly reducing the system's operational footprint.
