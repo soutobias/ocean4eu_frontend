@@ -82,7 +82,27 @@
           "start": "2020-01-01",
           "end": "2024-05-31"
         }
+      },
+      "olci": {
+        "url": "COPERNICUS/S3/OLCI",
+        "selectName": ["Oa08_radiance", "Oa06_radiance", "Oa04_radiance"],
+        "dataType": "GEE",
+        "content": "Information about the layer",
+        "vis": {
+          "min": -10,
+          "max": 100,
+          "gamma": 1.5
+        },
+        "geometry": [-180, -90, 180, 90],
+        "dateSelect": true,
+        "dates":{
+          "start": "2018-04-01",
+          "end": "2018-04-04"
+        }
       }
     }
   }
 }
+
+
+
