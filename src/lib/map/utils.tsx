@@ -256,8 +256,8 @@ export const defaultZoom = 6
 
 export const defaultMaxZoom = 30
 export const defaultWMSBounds = [
-  [50, -4],
-  [58, 4],
+  [40, -20],
+  [60, 25],
 ]
 
 export const cesiumPitch = Cesium.Math.toRadians(-10.0)

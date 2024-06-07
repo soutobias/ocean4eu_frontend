@@ -47,7 +47,7 @@
       }
     }
   },
-  "Remote Sensing": {
+  "NASA": {
     "layerNames": {
       "sst": {
         "url": "NOAA/CDR/OISST/V2_1",
@@ -57,11 +57,21 @@
         "vis": {
           "min": -2,
           "max": 30,
-          "palette": ["blue", "cyan", "yellow", "red"]
+          "palette": [
+            "blue",
+            "cyan",
+            "yellow",
+            "red"
+          ]
         },
-        "geometry": [-180, -90, 180, 90],
+        "geometry": [
+          -180,
+          -90,
+          180,
+          90
+        ],
         "dateSelect": true,
-        "dates":{
+        "dates": {
           "start": "2022-01-01",
           "end": "2023-01-01"
         }
@@ -74,18 +84,184 @@
         "vis": {
           "min": 0,
           "max": 10,
-          "palette": ["blue", "green", "yellow", "red"]
+          "palette": [
+            "blue",
+            "green",
+            "yellow",
+            "red"
+          ]
         },
-        "geometry": [-180, -90, 180, 90],
+        "geometry": [
+          -180,
+          -90,
+          180,
+          90
+        ],
         "dateSelect": true,
-        "dates":{
+        "dates": {
           "start": "2020-01-01",
           "end": "2024-05-31"
         }
+      }
+    }
+  },
+  "ECMWF": {
+    "layerNames": {
+      "Mean Air Temperature": {
+        "url": "ECMWF/ERA5/DAILY",
+        "selectName": "mean_2m_air_temperature",
+        "dataType": "GEE",
+        "content": "Information about the layer",
+        "vis": {
+          "min": 250,
+          "max": 320,
+          "palette": [
+            "000080",
+            "0000d9",
+            "4000ff",
+            "8000ff",
+            "0080ff",
+            "00ffff",
+            "00ff80",
+            "80ff00",
+            "daff00",
+            "ffff00",
+            "fff500",
+            "ffda00",
+            "ffb000",
+            "ffa400",
+            "ff4f00",
+            "ff2500",
+            "ff0a00",
+            "ff00ff"
+          ]
+        },
+        "geometry": [
+          -180,
+          -90,
+          180,
+          90
+        ],
+        "dateSelect": true,
+        "dates": {
+          "start": "2019-07-01",
+          "end": "2019-07-31"
+        }
       },
-      "olci": {
+      "Total Precipitation": {
+        "url": "ECMWF/ERA5/DAILY",
+        "selectName": "total_precipitation",
+        "dataType": "GEE",
+        "content": "Information about the layer",
+        "vis": {
+          "min": 0,
+          "max": 0.1,
+          "palette": [
+            "ffffff",
+            "00ffff",
+            "0080ff",
+            "da00ff",
+            "ffa400",
+            "ff0000"
+          ]
+        },
+        "geometry": [
+          -180,
+          -90,
+          180,
+          90
+        ],
+        "dateSelect": true,
+        "dates": {
+          "start": "2019-07-01",
+          "end": "2019-07-31"
+        }
+      },
+      "Dewpoint Temperature": {
+        "url": "ECMWF/ERA5/DAILY",
+        "selectName": "dewpoint_2m_temperature",
+        "dataType": "GEE",
+        "content": "Information about the layer",
+        "vis": {
+          "min": 250,
+          "max": 320,
+          "palette": [
+            "000080",
+            "0000d9",
+            "4000ff",
+            "8000ff",
+            "0080ff",
+            "00ffff",
+            "00ff80",
+            "80ff00",
+            "daff00",
+            "ffff00",
+            "fff500",
+            "ffda00",
+            "ffb000",
+            "ffa400",
+            "ff4f00",
+            "ff2500",
+            "ff0a00",
+            "ff00ff"
+          ]
+        },
+        "geometry": [
+          -180,
+          -90,
+          180,
+          90
+        ],
+        "dateSelect": true,
+        "dates": {
+          "start": "2019-07-01",
+          "end": "2019-07-31"
+        }
+      },
+      "U Wind Velocity 10m": {
+        "url": "ECMWF/ERA5/DAILY",
+        "selectName": "u_component_of_wind_10m",
+        "dataType": "GEE",
+        "content": "Information about the layer",
+        "vis": {
+          "min": 0,
+          "max": 30,
+          "palette": [
+            "ffffff",
+            "ffff71",
+            "deff00",
+            "9eff00",
+            "77b038",
+            "007e55",
+            "005f51",
+            "004b51",
+            "013a7b",
+            "023aad"
+          ]
+        },
+        "geometry": [
+          -180,
+          -90,
+          180,
+          90
+        ],
+        "dateSelect": true,
+        "dates": {
+          "start": "2019-07-01",
+          "end": "2019-07-31"
+        }
+      }
+    }
+  },
+  "Copernicus": {
+    "layerNames": {
+      "Ocean and Land Color": {
         "url": "COPERNICUS/S3/OLCI",
-        "selectName": ["Oa08_radiance", "Oa06_radiance", "Oa04_radiance"],
+        "selectName": [
+          "Oa08_radiance",
+          "Oa06_radiance",
+          "Oa04_radiance"
+        ],
         "dataType": "GEE",
         "content": "Information about the layer",
         "vis": {
@@ -93,9 +269,14 @@
           "max": 100,
           "gamma": 1.5
         },
-        "geometry": [-180, -90, 180, 90],
+        "geometry": [
+          -180,
+          -90,
+          180,
+          90
+        ],
         "dateSelect": true,
-        "dates":{
+        "dates": {
           "start": "2018-04-01",
           "end": "2018-04-04"
         }
@@ -103,6 +284,3 @@
     }
   }
 }
-
-
-

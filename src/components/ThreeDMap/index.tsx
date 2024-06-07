@@ -229,12 +229,15 @@ function ThreeDMap1({
       service: 'wms',
       request: 'GetMap',
       version: '1.3.0',
-      format: 'image/png',
+      format: 'image/jpeg',
       transparent: true,
-      width: 128,
-      height: 128,
+      width: 640,
+      height: 640,
       layers: layerName.params.layers,
       attribution: actual,
+      BBOX: '46.697956,16.223885,46.699840,16.2276628',
+      MAXCC: 20,
+      SHOWLOGO: false,
     }
     if (layerName.params.style) {
       params.style = layerName.params.style
